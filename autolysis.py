@@ -290,7 +290,7 @@ def generate_summary(df, client):
         ],
     )
 
-    return response
+    return response.choices[0].message.content.strip()
 
 
 # Example usage
